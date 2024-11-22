@@ -28,7 +28,7 @@ import io.cucumber.testng.CucumberOptions;
 public class GreenkartTestRunnerTestNG extends AbstractTestNGCucumberTests {
 	
 	@Override
-	@DataProvider (parallel = true) // it will run the all the scenario at the same time, parallel mode.
+	@DataProvider (parallel = false) // it will run the all the scenario at the same time, parallel mode.
 	public Object [][] scenarios(){
 		
 		return super.scenarios();
